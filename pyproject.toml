@@ -4,11 +4,12 @@ requires      = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "django-toolbox-view"
-version = "0.0.6"
+name = "django-advanced-toolbox-view"
+version = "1.0.0"
 description = "Provides a Django view to run functions from apps"
 readme = "readme.md"
 authors = [{ name = "Ian Jones"}]
+maintainers = [{ name = "Thomas Turner" }]
 license = { file = "LICENSE" }
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -16,11 +17,16 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 
-dependencies = ['django-nested-modals', 'django-tab-menus']
+dependencies = [
+    'ajax-advanced-helpers>=1.0.4',
+    'django-advanced-menus>=1.0.0',
+    'django-advanced-modals>=1.0.0',
+]
 requires-python = ">=3.9"
 
 [project.urls]
-Homepage = "https://github.com/jonesim/django-toolbox-view"
+Homepage = "https://github.com/django-advance-utils/django-advanced-toolbox-view"
+Upstream = "https://github.com/jonesim/django-toolbox-view"
 
 [tool.setuptools]
 packages = ['toolbox_view']
